@@ -4,7 +4,7 @@ It's Like TODO List Application
 
 #ScreenShot 
 
-![1](https://user-images.githubusercontent.com/60572628/150840945-61c18edf-d450-42ae-9471-e468ed6bd9ce.png)
+![1](https://user-images.githubusercontent.com/60572628/150840945-61c18edf-d450-42ae-9471-e468ed6bd9ce.png ) { width=50% }
 
 
 
