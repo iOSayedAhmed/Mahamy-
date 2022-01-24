@@ -7,23 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA2C323C279D6EF20049B676 /* MahamyModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA2C323A279D6EF20049B676 /* MahamyModel.xcdatamodeld */; };
 		BABE4F952791CA7A00987E23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABE4F942791CA7A00987E23 /* AppDelegate.swift */; };
 		BABE4F972791CA7A00987E23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABE4F962791CA7A00987E23 /* SceneDelegate.swift */; };
-		BABE4F992791CA7A00987E23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABE4F982791CA7A00987E23 /* ViewController.swift */; };
+		BABE4F992791CA7A00987E23 /* HomeMahamyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABE4F982791CA7A00987E23 /* HomeMahamyVC.swift */; };
 		BABE4F9C2791CA7A00987E23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BABE4F9A2791CA7A00987E23 /* Main.storyboard */; };
 		BABE4F9E2791CA7B00987E23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BABE4F9D2791CA7B00987E23 /* Assets.xcassets */; };
 		BABE4FA12791CA7B00987E23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BABE4F9F2791CA7B00987E23 /* LaunchScreen.storyboard */; };
+		BABE4FAA2791CB7C00987E23 /* MahamyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABE4FA82791CB7C00987E23 /* MahamyCell.swift */; };
+		BABE4FAB2791CB7C00987E23 /* MahamyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BABE4FA92791CB7C00987E23 /* MahamyCell.xib */; };
+		BABE4FAD2791E81100987E23 /* MahamyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABE4FAC2791E81100987E23 /* MahamyModel.swift */; };
+		BABE4FB22791EEA600987E23 /* MahamyDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABE4FB12791EEA600987E23 /* MahamyDetailsVC.swift */; };
+		BABE4FB42792274C00987E23 /* NewMahamyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABE4FB32792274C00987E23 /* NewMahamyVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA2C323B279D6EF20049B676 /* MahamyModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MahamyModel.xcdatamodel; sourceTree = "<group>"; };
 		BABE4F912791CA7A00987E23 /* Mahamy|مهامي.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mahamy|مهامي.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BABE4F942791CA7A00987E23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BABE4F962791CA7A00987E23 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BABE4F982791CA7A00987E23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BABE4F982791CA7A00987E23 /* HomeMahamyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMahamyVC.swift; sourceTree = "<group>"; };
 		BABE4F9B2791CA7A00987E23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BABE4F9D2791CA7B00987E23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BABE4FA02791CA7B00987E23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BABE4FA22791CA7B00987E23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BABE4FA82791CB7C00987E23 /* MahamyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MahamyCell.swift; sourceTree = "<group>"; };
+		BABE4FA92791CB7C00987E23 /* MahamyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MahamyCell.xib; sourceTree = "<group>"; };
+		BABE4FAC2791E81100987E23 /* MahamyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MahamyModel.swift; sourceTree = "<group>"; };
+		BABE4FB12791EEA600987E23 /* MahamyDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MahamyDetailsVC.swift; sourceTree = "<group>"; };
+		BABE4FB32792274C00987E23 /* NewMahamyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMahamyVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,45 @@
 		BABE4F932791CA7A00987E23 /* Mahamy|مهامي */ = {
 			isa = PBXGroup;
 			children = (
+				BABE4FB02791E84E00987E23 /* Model */,
+				BABE4FAF2791E82700987E23 /* View */,
+				BABE4FAE2791E81700987E23 /* Controller */,
 				BABE4F942791CA7A00987E23 /* AppDelegate.swift */,
 				BABE4F962791CA7A00987E23 /* SceneDelegate.swift */,
-				BABE4F982791CA7A00987E23 /* ViewController.swift */,
-				BABE4F9A2791CA7A00987E23 /* Main.storyboard */,
 				BABE4F9D2791CA7B00987E23 /* Assets.xcassets */,
 				BABE4F9F2791CA7B00987E23 /* LaunchScreen.storyboard */,
 				BABE4FA22791CA7B00987E23 /* Info.plist */,
 			);
 			path = "Mahamy|مهامي";
+			sourceTree = "<group>";
+		};
+		BABE4FAE2791E81700987E23 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BABE4FB32792274C00987E23 /* NewMahamyVC.swift */,
+				BABE4F982791CA7A00987E23 /* HomeMahamyVC.swift */,
+				BABE4FB12791EEA600987E23 /* MahamyDetailsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BABE4FAF2791E82700987E23 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BABE4F9A2791CA7A00987E23 /* Main.storyboard */,
+				BABE4FA82791CB7C00987E23 /* MahamyCell.swift */,
+				BABE4FA92791CB7C00987E23 /* MahamyCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BABE4FB02791E84E00987E23 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA2C323A279D6EF20049B676 /* MahamyModel.xcdatamodeld */,
+				BABE4FAC2791E81100987E23 /* MahamyModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BABE4FAB2791CB7C00987E23 /* MahamyCell.xib in Resources */,
 				BABE4FA12791CA7B00987E23 /* LaunchScreen.storyboard in Resources */,
 				BABE4F9E2791CA7B00987E23 /* Assets.xcassets in Resources */,
 				BABE4F9C2791CA7A00987E23 /* Main.storyboard in Resources */,
@@ -138,9 +181,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BABE4F992791CA7A00987E23 /* ViewController.swift in Sources */,
+				BABE4FB22791EEA600987E23 /* MahamyDetailsVC.swift in Sources */,
+				BABE4FAA2791CB7C00987E23 /* MahamyCell.swift in Sources */,
+				BABE4F992791CA7A00987E23 /* HomeMahamyVC.swift in Sources */,
 				BABE4F952791CA7A00987E23 /* AppDelegate.swift in Sources */,
+				BABE4FAD2791E81100987E23 /* MahamyModel.swift in Sources */,
 				BABE4F972791CA7A00987E23 /* SceneDelegate.swift in Sources */,
+				BA2C323C279D6EF20049B676 /* MahamyModel.xcdatamodeld in Sources */,
+				BABE4FB42792274C00987E23 /* NewMahamyVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +386,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BA2C323A279D6EF20049B676 /* MahamyModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BA2C323B279D6EF20049B676 /* MahamyModel.xcdatamodel */,
+			);
+			currentVersion = BA2C323B279D6EF20049B676 /* MahamyModel.xcdatamodel */;
+			path = MahamyModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BABE4F892791CA7A00987E23 /* Project object */;
 }
