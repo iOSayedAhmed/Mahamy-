@@ -17,7 +17,7 @@ class HomeMahamyVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.AllMahamyArray = getMahamy()
+        self.AllMahamyArray = MahamyStorage.getMahamy()
         
         tableView.register(UINib(nibName: "MahamyCell", bundle: nil), forCellReuseIdentifier: "MahamyCell")
         tableView.dataSource = self
@@ -39,7 +39,7 @@ class HomeMahamyVC: UIViewController {
             AllMahamyArray.append(newMahamy)
             tableView.reloadData()
             //save to CoreDate
-            CreateMahamy(mahamy: newMahamy)
+            MahamyStorage.CreateMahamy(mahamy: newMahamy)
         }
         
         
@@ -52,7 +52,7 @@ class HomeMahamyVC: UIViewController {
                 
                 AllMahamyArray[index] = editedMahamy
                 tableView.reloadData()
-                updateMahamy(mahamy: editedMahamy, index: index)
+                MahamyStorage.updateMahamy(mahamy: editedMahamy, index: index)
             }
             
         }
@@ -61,97 +61,11 @@ class HomeMahamyVC: UIViewController {
         if let index = notification.userInfo?["deletedMahamyIndex"] as? Int {
             AllMahamyArray.remove(at: index)
             tableView.reloadData()
-            deleteMahamy(index: index)
+            MahamyStorage.deleteMahamy(index: index)
         }
         
     }
-    
-    //MARK:- CoreData CRUD Functions
-    
-    func CreateMahamy(mahamy:MahamyModel) {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
-        let managedContext = appDelegate.persistentContainer.viewContext
-        guard let mahamyEntity = NSEntityDescription.entity(forEntityName: "Mahamy", in: managedContext) else { return}
-        let mahamyObject = NSManagedObject(entity: mahamyEntity, insertInto: managedContext)
-        mahamyObject.setValue(mahamy.title, forKey: "title")
-        mahamyObject.setValue(mahamy.details, forKey: "details")
-        if let image = mahamy.image {
-            let imageData = image.jpegData(compressionQuality: 1)
-            mahamyObject.setValue(imageData, forKey: "image")
-        }
-        
-        // Now we save all data to core Data
-        
-        do {
-            try managedContext.save()
-            print("==== Success ====")
-        }catch {
-            print("===== Error in Saving Data to CoreData to   ==== \(error.localizedDescription)")
-        }
-    }
-    
-    func getMahamy() -> [MahamyModel] {
-        var Mahamy : [MahamyModel] = []
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return [] }
-        
-        let managedContext = appDelegate.persistentContainer.viewContext
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult> (entityName: "Mahamy")
-        do {
-            let result = try managedContext.fetch(fetchRequest)
-            for managedMahamy in result as! [NSManagedObject] {
-                let title = managedMahamy.value(forKey: "title") as! String
-                let details = managedMahamy.value(forKey: "details") as! String
-                var image : UIImage? = nil
-                if let imageData = managedMahamy.value(forKey: "image") as? Data{
-                    image = UIImage(data: imageData)
-                }
-                let myMahamy = MahamyModel(title: title, image: image, details: details)
-                
-                Mahamy.append(myMahamy)
-            }
-        }catch {
-            print("=== error in Reading Data from CoreData \(error.localizedDescription)")
-        }
-        return Mahamy
-    }
-    
-    func updateMahamy(mahamy:MahamyModel, index:Int) {
-        let myMahamy: [MahamyModel] = []
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
-        let managedContext = appDelegate.persistentContainer.viewContext
-        let fetchRequest : NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "Mahamy")
-        do {
-            let result = try managedContext.fetch(fetchRequest) as! [NSManagedObject]
-            result[index].setValue(mahamy.title, forKey: "title")
-            result[index].setValue(mahamy.details, forKey: "details")
-            if let image = mahamy.image {
-                let imageData = image.jpegData(compressionQuality: 1)
-                result[index].setValue(imageData, forKey: "image")
-            }
 
-            try managedContext.save()
-        }catch {
-            print("=== Error === \(error.localizedDescription)")
-        }
-      
-    }
-    func deleteMahamy(index:Int) {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
-        let managedContext = appDelegate.persistentContainer.viewContext
-        let fetchRequest : NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "Mahamy")
-        do {
-            let result = try managedContext.fetch(fetchRequest) as! [NSManagedObject]
-           let mahamyIndexDelelted = result[index]
-            managedContext.delete(mahamyIndexDelelted)
-
-            try managedContext.save()
-        }catch {
-            print("=== Error === \(error.localizedDescription)")
-        }
-      
-    }
-    
-    
 }
 extension HomeMahamyVC : UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

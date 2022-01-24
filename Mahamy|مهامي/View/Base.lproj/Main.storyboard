@@ -97,15 +97,11 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Qd-NV-Z2L">
-                                <rect key="frame" x="334" y="54" width="80" height="40"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="iJh-fs-PBg"/>
-                                    <constraint firstAttribute="height" constant="40" id="mWT-zc-ayz"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <rect key="frame" x="83" y="810" width="248" height="42"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <state key="normal" title="حذف">
-                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
                                 <connections>
                                     <action selector="deleteButtonClicked:" destination="AL7-Bw-Hgs" eventType="touchUpInside" id="qlm-w6-b7o"/>
@@ -115,16 +111,17 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="ndl-4r-cJL" firstAttribute="height" secondItem="qFE-BL-RSA" secondAttribute="height" multiplier="0.07" id="4La-Y6-Md2"/>
-                            <constraint firstItem="3Qd-NV-Z2L" firstAttribute="top" secondItem="qFE-BL-RSA" secondAttribute="topMargin" constant="10" id="5aX-CW-yf5"/>
                             <constraint firstItem="MXi-gn-P2W" firstAttribute="height" secondItem="qFE-BL-RSA" secondAttribute="height" multiplier="0.2" id="6oP-nZ-669"/>
+                            <constraint firstItem="3Qd-NV-Z2L" firstAttribute="centerX" secondItem="heg-Gk-lSD" secondAttribute="centerX" id="AAT-R4-qyS"/>
                             <constraint firstItem="heg-Gk-lSD" firstAttribute="trailing" secondItem="Hmd-Io-9Xa" secondAttribute="trailing" id="Cko-0z-W3m"/>
                             <constraint firstItem="Hmd-Io-9Xa" firstAttribute="top" secondItem="heg-Gk-lSD" secondAttribute="top" id="Jur-nn-L08"/>
                             <constraint firstItem="heg-Gk-lSD" firstAttribute="trailing" secondItem="MXi-gn-P2W" secondAttribute="trailing" constant="5" id="PGz-I2-Nu0"/>
                             <constraint firstItem="MXi-gn-P2W" firstAttribute="top" secondItem="ndl-4r-cJL" secondAttribute="bottom" constant="5" id="Rws-9w-cEB"/>
                             <constraint firstItem="ndl-4r-cJL" firstAttribute="leading" secondItem="heg-Gk-lSD" secondAttribute="leading" id="TPp-je-JZy"/>
-                            <constraint firstAttribute="trailing" secondItem="3Qd-NV-Z2L" secondAttribute="trailing" id="Yl3-rn-tuk"/>
+                            <constraint firstItem="heg-Gk-lSD" firstAttribute="bottom" secondItem="3Qd-NV-Z2L" secondAttribute="bottom" constant="10" id="gls-3b-JBt"/>
                             <constraint firstItem="Hmd-Io-9Xa" firstAttribute="height" secondItem="qFE-BL-RSA" secondAttribute="height" multiplier="0.45" id="mUh-Zo-13w"/>
                             <constraint firstItem="ndl-4r-cJL" firstAttribute="top" secondItem="Hmd-Io-9Xa" secondAttribute="bottom" constant="10" id="qzo-pC-rCs"/>
+                            <constraint firstItem="3Qd-NV-Z2L" firstAttribute="width" secondItem="qFE-BL-RSA" secondAttribute="width" multiplier="0.6" id="r0R-lf-jIa"/>
                             <constraint firstItem="heg-Gk-lSD" firstAttribute="trailing" secondItem="ndl-4r-cJL" secondAttribute="trailing" id="rX0-FJ-2Ia"/>
                             <constraint firstItem="Hmd-Io-9Xa" firstAttribute="leading" secondItem="heg-Gk-lSD" secondAttribute="leading" id="tZ1-Xi-Hyk"/>
                             <constraint firstItem="MXi-gn-P2W" firstAttribute="leading" secondItem="heg-Gk-lSD" secondAttribute="leading" constant="5" id="woj-oc-3pX"/>
@@ -198,16 +195,15 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YSH-qt-qus">
                                         <rect key="frame" x="0.0" y="114.5" width="394" height="244"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عنوان المهمة" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6E-4f-kGr">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تفاصيل المهمة" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6E-4f-kGr">
                                                 <rect key="frame" x="0.0" y="0.0" width="394" height="8.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="C2U-6R-cCB">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="تفاصيل المهمة" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="C2U-6R-cCB">
                                                 <rect key="frame" x="0.0" y="18.5" width="394" height="225.5"/>
                                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

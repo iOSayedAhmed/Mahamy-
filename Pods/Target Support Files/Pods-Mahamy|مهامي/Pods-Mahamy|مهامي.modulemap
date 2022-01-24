@@ -1,0 +1,6 @@
+framework module Pods_Mahamy______ {
+  umbrella header "Pods-Mahamy|مهامي-umbrella.h"
+
+  export *
+  module * { export * }
+}

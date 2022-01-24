@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		BA2C323C279D6EF20049B676 /* MahamyModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA2C323A279D6EF20049B676 /* MahamyModel.xcdatamodeld */; };
+		BAB86FE8279F21DF00C2B1D0 /* MahamyStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB86FE7279F21DF00C2B1D0 /* MahamyStorage.swift */; };
 		BABE4F952791CA7A00987E23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABE4F942791CA7A00987E23 /* AppDelegate.swift */; };
 		BABE4F972791CA7A00987E23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABE4F962791CA7A00987E23 /* SceneDelegate.swift */; };
 		BABE4F992791CA7A00987E23 /* HomeMahamyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABE4F982791CA7A00987E23 /* HomeMahamyVC.swift */; };
@@ -22,7 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		61D95D10730D0C0FF87E6057 /* Pods-Mahamy|مهامي.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mahamy|مهامي.release.xcconfig"; path = "Target Support Files/Pods-Mahamy|مهامي/Pods-Mahamy|مهامي.release.xcconfig"; sourceTree = "<group>"; };
+		AC6A5BF218D470AB7E681029 /* Pods-Mahamy|مهامي.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mahamy|مهامي.debug.xcconfig"; path = "Target Support Files/Pods-Mahamy|مهامي/Pods-Mahamy|مهامي.debug.xcconfig"; sourceTree = "<group>"; };
 		BA2C323B279D6EF20049B676 /* MahamyModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MahamyModel.xcdatamodel; sourceTree = "<group>"; };
+		BAB86FE7279F21DF00C2B1D0 /* MahamyStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MahamyStorage.swift; sourceTree = "<group>"; };
 		BABE4F912791CA7A00987E23 /* Mahamy|مهامي.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mahamy|مهامي.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BABE4F942791CA7A00987E23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BABE4F962791CA7A00987E23 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,11 +53,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E056578E9E35AAA2C845B13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B93C554D410BA675C27521B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC6A5BF218D470AB7E681029 /* Pods-Mahamy|مهامي.debug.xcconfig */,
+				61D95D10730D0C0FF87E6057 /* Pods-Mahamy|مهامي.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BAB86FE5279F217900C2B1D0 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				BABE4F942791CA7A00987E23 /* AppDelegate.swift */,
+				BABE4F962791CA7A00987E23 /* SceneDelegate.swift */,
+				BABE4F9D2791CA7B00987E23 /* Assets.xcassets */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		BAB86FE6279F21A600C2B1D0 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				BAB86FE7279F21DF00C2B1D0 /* MahamyStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
 		BABE4F882791CA7A00987E23 = {
 			isa = PBXGroup;
 			children = (
 				BABE4F932791CA7A00987E23 /* Mahamy|مهامي */,
 				BABE4F922791CA7A00987E23 /* Products */,
+				B93C554D410BA675C27521B5 /* Pods */,
+				6E056578E9E35AAA2C845B13 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,13 +108,11 @@
 		BABE4F932791CA7A00987E23 /* Mahamy|مهامي */ = {
 			isa = PBXGroup;
 			children = (
+				BAB86FE5279F217900C2B1D0 /* SupportFiles */,
+				BAB86FE6279F21A600C2B1D0 /* Storage */,
 				BABE4FB02791E84E00987E23 /* Model */,
 				BABE4FAF2791E82700987E23 /* View */,
 				BABE4FAE2791E81700987E23 /* Controller */,
-				BABE4F942791CA7A00987E23 /* AppDelegate.swift */,
-				BABE4F962791CA7A00987E23 /* SceneDelegate.swift */,
-				BABE4F9D2791CA7B00987E23 /* Assets.xcassets */,
-				BABE4F9F2791CA7B00987E23 /* LaunchScreen.storyboard */,
 				BABE4FA22791CA7B00987E23 /* Info.plist */,
 			);
 			path = "Mahamy|مهامي";
@@ -93,6 +131,7 @@
 		BABE4FAF2791E82700987E23 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BABE4F9F2791CA7B00987E23 /* LaunchScreen.storyboard */,
 				BABE4F9A2791CA7A00987E23 /* Main.storyboard */,
 				BABE4FA82791CB7C00987E23 /* MahamyCell.swift */,
 				BABE4FA92791CB7C00987E23 /* MahamyCell.xib */,
@@ -116,9 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BABE4FA52791CA7B00987E23 /* Build configuration list for PBXNativeTarget "Mahamy|مهامي" */;
 			buildPhases = (
+				37A5A983E073E1A4189F1C67 /* [CP] Check Pods Manifest.lock */,
 				BABE4F8D2791CA7A00987E23 /* Sources */,
 				BABE4F8E2791CA7A00987E23 /* Frameworks */,
 				BABE4F8F2791CA7A00987E23 /* Resources */,
+				93CEC636AAB9917C8ED07262 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -176,6 +217,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		37A5A983E073E1A4189F1C67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mahamy|مهامي-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93CEC636AAB9917C8ED07262 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mahamy|مهامي/Pods-Mahamy|مهامي-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mahamy|مهامي/Pods-Mahamy|مهامي-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mahamy|مهامي/Pods-Mahamy|مهامي-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BABE4F8D2791CA7A00987E23 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -187,6 +270,7 @@
 				BABE4F952791CA7A00987E23 /* AppDelegate.swift in Sources */,
 				BABE4FAD2791E81100987E23 /* MahamyModel.swift in Sources */,
 				BABE4F972791CA7A00987E23 /* SceneDelegate.swift in Sources */,
+				BAB86FE8279F21DF00C2B1D0 /* MahamyStorage.swift in Sources */,
 				BA2C323C279D6EF20049B676 /* MahamyModel.xcdatamodeld in Sources */,
 				BABE4FB42792274C00987E23 /* NewMahamyVC.swift in Sources */,
 			);
@@ -330,6 +414,7 @@
 		};
 		BABE4FA62791CA7B00987E23 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC6A5BF218D470AB7E681029 /* Pods-Mahamy|مهامي.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -348,6 +433,7 @@
 		};
 		BABE4FA72791CA7B00987E23 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61D95D10730D0C0FF87E6057 /* Pods-Mahamy|مهامي.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
