@@ -26,6 +26,7 @@ class NewMahamyVC: UIViewController {
         if !isCreation {
             mainButton.setTitle("تعديل", for: .normal)
             navigationItem.title = "تعديل مهمة"
+            
         }
         if let mahamy = editedMahamy {
             mahamyTitleTextField.text = mahamy.title
