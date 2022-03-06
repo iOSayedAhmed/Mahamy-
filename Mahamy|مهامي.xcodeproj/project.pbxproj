@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BA2C323C279D6EF20049B676 /* MahamyModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA2C323A279D6EF20049B676 /* MahamyModel.xcdatamodeld */; };
+		BA6DE85927D560E200719482 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6DE85827D560E200719482 /* AnimationViewController.swift */; };
 		BAB86FE8279F21DF00C2B1D0 /* MahamyStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB86FE7279F21DF00C2B1D0 /* MahamyStorage.swift */; };
 		BABE4F952791CA7A00987E23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABE4F942791CA7A00987E23 /* AppDelegate.swift */; };
 		BABE4F972791CA7A00987E23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABE4F962791CA7A00987E23 /* SceneDelegate.swift */; };
@@ -26,6 +27,7 @@
 		61D95D10730D0C0FF87E6057 /* Pods-Mahamy|مهامي.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mahamy|مهامي.release.xcconfig"; path = "Target Support Files/Pods-Mahamy|مهامي/Pods-Mahamy|مهامي.release.xcconfig"; sourceTree = "<group>"; };
 		AC6A5BF218D470AB7E681029 /* Pods-Mahamy|مهامي.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mahamy|مهامي.debug.xcconfig"; path = "Target Support Files/Pods-Mahamy|مهامي/Pods-Mahamy|مهامي.debug.xcconfig"; sourceTree = "<group>"; };
 		BA2C323B279D6EF20049B676 /* MahamyModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MahamyModel.xcdatamodel; sourceTree = "<group>"; };
+		BA6DE85827D560E200719482 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 		BAB86FE7279F21DF00C2B1D0 /* MahamyStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MahamyStorage.swift; sourceTree = "<group>"; };
 		BABE4F912791CA7A00987E23 /* Mahamy|مهامي.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mahamy|مهامي.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BABE4F942791CA7A00987E23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				BABE4FB32792274C00987E23 /* NewMahamyVC.swift */,
 				BABE4F982791CA7A00987E23 /* HomeMahamyVC.swift */,
 				BABE4FB12791EEA600987E23 /* MahamyDetailsVC.swift */,
+				BA6DE85827D560E200719482 /* AnimationViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				BAB86FE8279F21DF00C2B1D0 /* MahamyStorage.swift in Sources */,
 				BA2C323C279D6EF20049B676 /* MahamyModel.xcdatamodeld in Sources */,
 				BABE4FB42792274C00987E23 /* NewMahamyVC.swift in Sources */,
+				BA6DE85927D560E200719482 /* AnimationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
